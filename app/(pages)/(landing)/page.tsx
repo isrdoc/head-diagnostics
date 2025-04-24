@@ -28,8 +28,8 @@ export default function Page() {
 
           {/* Hero Content */}
           <div className="relative h-full">
-            <div className="h-full ml-auto w-1/2 px-6 lg:px-12">
-              <div className="h-full max-w-xl flex flex-col">
+            <div className="h-full w-full min-[1150px]:w-1/2 min-[1150px]:ml-auto px-6 lg:px-12">
+              <div className="h-full max-w-xl flex flex-col relative ml-auto min-[1150px]:ml-0">
                 {/* Main Heading */}
                 <div className="pt-[20vh]">
                   <div className="border-t-2 border-white/30 pt-8">
@@ -43,44 +43,80 @@ export default function Page() {
                 </div>
 
                 {/* Feature Boxes */}
-                <div className="mt-auto mb-2">
+                <div className="mt-auto mb-8">
                   <div className="flex gap-6">
-                    <div className="flex-1 border-t-2 border-white/30 pt-4">
-                      <p className="text-white/60 text-xs mb-3">02.</p>
-                      <p className="text-white text-base font-medium leading-snug">
+                    <div className="flex-1 border-t-2 border-white/30 pt-2">
+                      <p className="text-white/60 text-lg mb-2">02.</p>
+                      <p className="text-white text-lg font-medium leading-snug">
                         Patient-centered design emphasizing privacy, dignity,
                         and comfort
                       </p>
                     </div>
 
-                    <div className="flex-1 border-t-2 border-white/30 pt-4">
-                      <p className="text-white/60 text-xs mb-3">03.</p>
-                      <p className="text-white text-base font-medium leading-snug">
+                    <div className="flex-1 border-t-2 border-white/30 pt-2">
+                      <p className="text-white/60 text-lg mb-2">03.</p>
+                      <p className="text-white text-lg font-medium leading-snug">
                         Cutting-edge medical-grade technology for cognitive,
                         motor, and functional assessment
                       </p>
                     </div>
 
-                    <div className="flex-1 border-t-2 border-white/30 pt-4">
-                      <p className="text-white/60 text-xs mb-3">04.</p>
-                      <p className="text-white text-base font-medium leading-snug">
+                    <div className="flex-1 border-t-2 border-white/30 pt-2">
+                      <p className="text-white/60 text-lg mb-2">04.</p>
+                      <p className="text-white text-lg font-medium leading-snug">
                         Integration of AI and machine learning for precise data
                         analysis and actionable insights
                       </p>
                     </div>
                   </div>
                 </div>
+
+                {/* Navigation Arrows */}
+                <div className="absolute bottom-0 right-0 flex">
+                  <button className="w-12 h-12 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-6 h-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.75 19.5L8.25 12l7.5-7.5"
+                      />
+                    </svg>
+                  </button>
+                  <button className="w-12 h-12 bg-white/10 backdrop-blur-md hover:bg-white/20 transition-colors flex items-center justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-6 h-6 text-white"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
 
           {/* About Box */}
-          <div className="absolute bottom-0 left-24">
-            <div className="max-w-[400px] bg-[#6276B7] bg-opacity-90 backdrop-blur-sm px-8 pr-16 pt-8 pb-16">
-              <p className="text-white text-xs font-medium tracking-widest mb-2">
+          <div className="absolute bottom-0 left-24 hidden min-[1150px]:block">
+            <div className="max-w-[500px] bg-[#6276B7] bg-opacity-90 backdrop-blur-sm px-8 pr-16 pt-10 pb-24">
+              <p className="text-white text-md font-medium tracking-widest mb-2">
                 ABOUT
               </p>
-              <p className="text-white/90 text-xs leading-relaxed">
+              <p className="text-white/90 text-md leading-relaxed">
                 Founded in 20XX in Ireland. Head Diagnostics is a pioneer in
                 Ocular Micro Tremor (OMT).
               </p>

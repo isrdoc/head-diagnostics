@@ -17,14 +17,14 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-transparent z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center pt-8 pb-4">
           {/* Left side wrapper for menu and logo */}
           <div className="flex items-center gap-3">
             {/* Hamburger Menu Button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="rounded-full p-3 inline-flex items-center justify-center text-white hover:text-white/80 bg-white/10 hover:bg-white/20 transition-colors"
+              className="rounded-full p-4 inline-flex items-center justify-center text-white hover:text-white/80 bg-white/10 hover:bg-white/20 transition-colors"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -48,7 +48,7 @@ export default function Header() {
                   alt="Menu"
                   width={20}
                   height={20}
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                 />
               )}
             </button>
@@ -61,34 +61,36 @@ export default function Header() {
                   alt="Head Diagnostics Logo"
                   width={180}
                   height={40}
-                  className="h-8 w-auto"
+                  className="h-10 w-auto"
                   priority
                 />
               </Link>
             </div>
           </div>
 
-          <div className="hidden md:flex items-center">
-            {/* Desktop Navigation */}
-            <nav className="flex space-x-8 bg-white/5 backdrop-blur-sm px-4 py-1.5 rounded-lg">
-              {menuItems.map((item) => (
-                <Link
-                  key={item.number}
-                  href={item.href}
-                  className="text-sm text-white hover:text-white/80 transition-colors group relative pt-4"
-                >
-                  <span className="absolute top-0 right-0 text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
-                    {item.number}
-                  </span>
-                  {item.text}
-                </Link>
-              ))}
-            </nav>
+          <div className="flex items-center">
+            <div className="hidden min-[1070px]:flex items-center">
+              {/* Desktop Navigation */}
+              <nav className="flex space-x-8 bg-white/5 backdrop-blur-sm px-6 py-1.5 rounded-lg">
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.number}
+                    href={item.href}
+                    className="text-base text-white hover:text-white/80 transition-colors group relative pt-4 pb-2"
+                  >
+                    <span className="absolute top-0 right-0 text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                      {item.number}
+                    </span>
+                    {item.text}
+                  </Link>
+                ))}
+              </nav>
+            </div>
 
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+              className="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
             >
               Let&apos;s talk
             </Link>
@@ -102,7 +104,7 @@ export default function Header() {
                   <Link
                     key={item.number}
                     href={item.href}
-                    className="block px-3 py-2 rounded-md text-sm font-medium text-white hover:text-white/80 hover:bg-white/10 transition-colors group relative pt-6"
+                    className="block px-3 py-2 rounded-md text-sm font-bold text-white hover:text-white/80 hover:bg-white/10 transition-colors group relative pt-6"
                   >
                     <span className="absolute top-2 right-3 text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
                       {item.number}
@@ -112,7 +114,7 @@ export default function Header() {
                 ))}
                 <Link
                   href="/contact"
-                  className="block px-3 py-2 rounded-md text-sm font-medium text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+                  className="block px-3 py-2 rounded-md text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
                 >
                   Let&apos;s talk
                 </Link>
