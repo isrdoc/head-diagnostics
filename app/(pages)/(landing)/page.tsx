@@ -43,7 +43,7 @@ export default function Page() {
                 </div>
 
                 {/* Feature Boxes */}
-                <div className="mt-auto mb-8">
+                <div className="mt-auto mb-16 min-[400px]:mb-8">
                   <div className="flex gap-6">
                     <div className="flex-1 border-t-2 border-white/30 pt-2">
                       <p className="text-white/60 text-lg mb-2">02.</p>
@@ -53,7 +53,7 @@ export default function Page() {
                       </p>
                     </div>
 
-                    <div className="flex-1 border-t-2 border-white/30 pt-2">
+                    <div className="flex-1 border-t-2 border-white/30 pt-2 hidden min-[400px]:block">
                       <p className="text-white/60 text-lg mb-2">03.</p>
                       <p className="text-white text-lg font-medium leading-snug">
                         Cutting-edge medical-grade technology for cognitive,
@@ -61,7 +61,7 @@ export default function Page() {
                       </p>
                     </div>
 
-                    <div className="flex-1 border-t-2 border-white/30 pt-2">
+                    <div className="flex-1 border-t-2 border-white/30 pt-2 hidden min-[400px]:block">
                       <p className="text-white/60 text-lg mb-2">04.</p>
                       <p className="text-white text-lg font-medium leading-snug">
                         Integration of AI and machine learning for precise data

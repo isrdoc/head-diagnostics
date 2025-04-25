@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import clsx from "clsx";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,11 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-transparent z-50">
-      <div className="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        className={clsx("max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8", {
+          "bg-black": isMenuOpen,
+        })}
+      >
         <div className="flex justify-between items-center pt-8 pb-4">
           {/* Left side wrapper for menu and logo */}
           <div className="flex items-center gap-3">
@@ -68,7 +73,11 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="flex items-center">
+          <div
+            className={clsx("flex items-center", {
+              hidden: isMenuOpen,
+            })}
+          >
             <div className="hidden min-[1070px]:flex items-center">
               {/* Desktop Navigation */}
               <nav className="flex space-x-8 bg-white/5 backdrop-blur-sm px-6 py-1.5 rounded-lg">
@@ -90,7 +99,7 @@ export default function Header() {
             {/* CTA Button */}
             <Link
               href="/contact"
-              className="ml-8 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+              className="hidden min-[400px]:block ml-8 inline-flex items-center text-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
             >
               Let&apos;s talk
             </Link>
@@ -98,23 +107,24 @@ export default function Header() {
 
           {/* Mobile menu */}
           {isMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/5 backdrop-blur-sm rounded-lg mt-2">
+            <div className="absolute h-screen top-full left-0 right-0 bg-black">
+              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 rounded-lg mt-2">
                 {menuItems.map((item) => (
                   <Link
                     key={item.number}
                     href={item.href}
-                    className="block px-3 py-2 rounded-md text-sm font-bold text-white hover:text-white/80 hover:bg-white/10 transition-colors group relative pt-6"
+                    className="block px-4 py-4 flex items-center justify-between rounded-md text-sm font-bold text-white hover:text-white/80 hover:bg-white/10 transition-colors group"
                   >
-                    <span className="absolute top-2 right-3 text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
+                    {item.text}
+                    <span className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
                       {item.number}
                     </span>
-                    {item.text}
                   </Link>
                 ))}
+                <br />
                 <Link
                   href="/contact"
-                  className="block px-3 py-2 rounded-md text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+                  className="block px-4 py-4 rounded-md text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
                 >
                   Let&apos;s talk
                 </Link>
