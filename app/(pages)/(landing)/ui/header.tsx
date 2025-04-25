@@ -16,14 +16,20 @@ export default function Header() {
     { number: "05", text: "Contact Us", href: "/contact" },
   ];
 
+  function handleMenuClick() {
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 300);
+  }
+
   return (
     <header className="fixed w-full bg-transparent z-50">
       <div
-        className={clsx("max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8", {
+        className={clsx({
           "bg-black": isMenuOpen,
         })}
       >
-        <div className="flex justify-between items-center pt-8 pb-4">
+        <div className="max-w-[100rem] mx-auto flex justify-between items-center pt-8 pb-4 px-4 sm:px-6 lg:px-8">
           {/* Left side wrapper for menu and logo */}
           <div className="flex items-center gap-3">
             {/* Hamburger Menu Button */}
@@ -60,7 +66,11 @@ export default function Header() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center">
+              <Link
+                href="/"
+                className="flex items-center"
+                onClick={handleMenuClick}
+              >
                 <Image
                   src="/logo.png"
                   alt="Head Diagnostics Logo"
@@ -80,7 +90,7 @@ export default function Header() {
           >
             <div className="hidden min-[1070px]:flex items-center">
               {/* Desktop Navigation */}
-              <nav className="flex space-x-8 bg-white/5 backdrop-blur-sm px-6 py-1.5 rounded-lg">
+              <nav className="flex space-x-8 bg-white/5 backdrop-blur-sm px-6 py-1 rounded-lg">
                 {menuItems.map((item) => (
                   <Link
                     key={item.number}
@@ -108,12 +118,13 @@ export default function Header() {
           {/* Mobile menu */}
           {isMenuOpen && (
             <div className="absolute h-screen top-full left-0 right-0 bg-black">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 rounded-lg mt-2">
+              <div className="max-w-[100rem] mx-auto px-2 pt-2 pb-3 space-y-1 sm:px-3 rounded-lg mt-2">
                 {menuItems.map((item) => (
                   <Link
                     key={item.number}
                     href={item.href}
-                    className="block px-4 py-4 flex items-center justify-between rounded-md text-sm font-bold text-white hover:text-white/80 hover:bg-white/10 transition-colors group"
+                    className="block px-4 py-4 flex items-center justify-between rounded-md text-xl font-bold text-white hover:text-white/80 hover:bg-white/10 transition-colors group"
+                    onClick={handleMenuClick}
                   >
                     {item.text}
                     <span className="text-[10px] text-white/60 group-hover:text-white/80 transition-colors">
@@ -124,7 +135,8 @@ export default function Header() {
                 <br />
                 <Link
                   href="/contact"
-                  className="block px-4 py-4 rounded-md text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+                  className="block px-4 py-4 rounded-md text-xl font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+                  onClick={handleMenuClick}
                 >
                   Let&apos;s talk
                 </Link>

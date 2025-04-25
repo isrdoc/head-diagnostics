@@ -2,9 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
+:root {
+  --max-content-width: 90rem;
+  --content-margin: max(0px, calc((100vw - var(--max-content-width)) / 2));
+  --content-padding: 6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --content-padding: 3rem;
+  }
+}
+
+@layer components {
+  .max-w-content {
+    max-width: var(--max-content-width);
+  }
+  .ml-viewport-offset {
+    margin-left: var(--content-margin);
+    padding-left: calc(var(--content-padding) / 2);
+  }
+  .mr-viewport-offset {
+    margin-right: var(--content-margin);
+    padding-right: calc(var(--content-padding) / 2);
+  }
 }
 
 input[type="number"]::-webkit-inner-spin-button {
