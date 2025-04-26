@@ -24,7 +24,7 @@ export default function Header() {
   }
 
   return (
-    <header className="fixed w-full bg-transparent z-50">
+    <header className="absolute w-full bg-transparent z-50">
       <div
         className={clsx({
           "bg-black": isMenuOpen,
