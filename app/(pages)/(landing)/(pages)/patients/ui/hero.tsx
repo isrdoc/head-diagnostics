@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "@/app/ui/button";
 
 export function Hero() {
   return (
@@ -28,12 +28,9 @@ export function Hero() {
               <p className="text-lg text-white/80 mb-8">
                 Leave us a little info, and we'll be in touch.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-[#5B6CFF] hover:bg-[#4B5AE5] rounded-md transition duration-150 ease-in-out w-fit"
-              >
+              <Button href="/contact" className="w-fit">
                 Contact Us
-              </Link>
+              </Button>
             </div>
           </div>
         </div>

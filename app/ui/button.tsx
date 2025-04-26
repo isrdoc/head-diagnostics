@@ -1,18 +1,25 @@
-import clsx from 'clsx';
+import clsx from "clsx";
+import Link from "next/link";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
+  href?: string;
 }
 
-export function Button({ children, className, ...rest }: ButtonProps) {
+export function Button({ children, className, href, ...rest }: ButtonProps) {
+  const baseStyles =
+    "inline-flex items-center text-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors";
+
+  if (href) {
+    return (
+      <Link href={href} className={clsx(baseStyles, className)}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <button
-      {...rest}
-      className={clsx(
-        'flex h-10 items-center rounded-lg bg-blue-500 px-4 text-sm font-medium text-white transition-colors hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:bg-blue-600 aria-disabled:cursor-not-allowed aria-disabled:opacity-50',
-        className,
-      )}
-    >
+    <button {...rest} className={clsx(baseStyles, className)}>
       {children}
     </button>
   );

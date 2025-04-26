@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
+import { Button } from "@/app/ui/button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,12 +108,9 @@ export default function Header() {
             </div>
 
             {/* CTA Button */}
-            <Link
-              href="/contact"
-              className="hidden min-[400px]:block ml-8 inline-flex items-center text-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
-            >
+            <Button href="/contact" className="hidden min-[400px]:block ml-8">
               Let&apos;s talk
-            </Link>
+            </Button>
           </div>
 
           {/* Mobile menu */}
@@ -133,13 +131,13 @@ export default function Header() {
                   </Link>
                 ))}
                 <br />
-                <Link
+                <Button
                   href="/contact"
-                  className="block px-4 py-4 rounded-md text-xl font-bold text-white bg-[#6276B7] hover:bg-[#7286C7] transition-colors"
+                  className="block w-full px-4 py-4 text-xl"
                   onClick={handleMenuClick}
                 >
                   Let&apos;s talk
-                </Link>
+                </Button>
               </div>
             </div>
           )}

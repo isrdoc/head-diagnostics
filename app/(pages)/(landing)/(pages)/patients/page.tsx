@@ -5,7 +5,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col">
       <Hero />
       <div className="w-full">
-        <div className="ml-viewport-offset">Content</div>
+        <div className="ml-viewport-offset"></div>
       </div>
     </main>
   );
