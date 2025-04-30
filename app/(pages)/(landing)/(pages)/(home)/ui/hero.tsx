@@ -17,8 +17,21 @@ export function Hero() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative h-full">
-          <div className="h-full w-full min-[1150px]:w-1/2 min-[1150px]:ml-auto px-6 lg:px-12">
+        <div className="relative h-full mx-auto max-w-content px-6 flex">
+          {/* About Box */}
+          <div className="hidden min-[1150px]:flex flex-col justify-end">
+            <div className="max-w-[500px] bg-[#6276B7] bg-opacity-90 backdrop-blur-sm px-8 pr-16 pt-10 pb-24">
+              <p className="text-white text-md font-medium tracking-widest mb-2">
+                ABOUT
+              </p>
+              <p className="text-white/90 text-md leading-relaxed">
+                Founded in 20XX in Ireland. Head Diagnostics is a pioneer in
+                Ocular Micro Tremor (OMT).
+              </p>
+            </div>
+          </div>
+          {/* Slider */}
+          <div className="h-full w-full min-[1150px]:w-1/2 min-[1150px]:ml-auto">
             <div className="h-full flex flex-col relative ml-auto min-[1150px]:ml-0">
               {/* Main Heading */}
               <div className="pt-[20vh]">
@@ -97,19 +110,6 @@ export function Hero() {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* About Box */}
-        <div className="absolute bottom-0 left-24 hidden min-[1150px]:block">
-          <div className="max-w-[500px] bg-[#6276B7] bg-opacity-90 backdrop-blur-sm px-8 pr-16 pt-10 pb-24">
-            <p className="text-white text-md font-medium tracking-widest mb-2">
-              ABOUT
-            </p>
-            <p className="text-white/90 text-md leading-relaxed">
-              Founded in 20XX in Ireland. Head Diagnostics is a pioneer in
-              Ocular Micro Tremor (OMT).
-            </p>
           </div>
         </div>
       </div>

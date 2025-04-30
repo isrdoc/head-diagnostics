@@ -55,7 +55,7 @@ export function SolutionsSection() {
     <section className="w-full bg-white py-24">
       <div className="mx-auto max-w-content px-6">
         <div className="flex flex-col lg:flex-row gap-16">
-          <div className="w-1/4">
+          <div className="w-full lg:w-1/4">
             <div className="border-t border-gray-400 pt-4">
               <div className="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">
                 Comprehensive Solutions for Every Stakeholder
@@ -91,7 +91,7 @@ function SolutionCard({
 }: SolutionCardProps) {
   return (
     <div className="flex flex-col space-y-6">
-      <div className="border-t border-gray-400 pt-4">
+      <div className="border-t-none lg:border-t border-gray-400 pt-4">
         <div className="mb-4 text-sm font-semibold text-gray-500 uppercase tracking-wider">
           {subtitle}
         </div>
