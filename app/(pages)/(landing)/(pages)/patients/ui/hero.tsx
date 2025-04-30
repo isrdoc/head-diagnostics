@@ -26,7 +26,7 @@ export function Hero() {
                 For Patients
               </h1>
               <p className="text-lg text-white/80 mb-8">
-                Leave us a little info, and we'll be in touch.
+                Leave us a little info, and we&apos;ll be in touch.
               </p>
               <Button href="/contact" className="w-fit">
                 Contact Us

@@ -27,7 +27,7 @@ export function ObjectiveSection() {
             monitoring of brain health should be accessible, simple, and
             reliable. Our handheld medical device, iTremor One, offers a rapid,
             non-invasive way to assess brain impairment caused by concussion,
-            Parkinson's Disease, Multiple Sclerosis, stroke, and other
+            Parkinson&apos;s Disease, Multiple Sclerosis, stroke, and other
             neurological conditions — all from the comfort of your home or
             clinic.
           </p>
