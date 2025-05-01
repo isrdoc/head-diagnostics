@@ -12,23 +12,25 @@ export function MissionSection() {
   ];
 
   return (
-    <ImageSection align="left">
-      <ImageSectionContent>
-        <div className="mb-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
-          Curious about another?
-        </div>
-        <h2
-          className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight md:leading-snug lg:leading-snug"
-          style={{ lineHeight: 1.18 }}
-        >
-          Mission & Vision
-        </h2>
-        <List items={items} />
-      </ImageSectionContent>
-      <ImageSectionImage
-        src="/home/doctor-with-patient-blurred.png"
-        alt="Doctor consulting with elderly patient"
-      />
-    </ImageSection>
+    <div className="max-w-page mx-auto">
+      <ImageSection align="left">
+        <ImageSectionContent>
+          <div className="mb-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+            Curious about another?
+          </div>
+          <h2
+            className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight md:leading-snug lg:leading-snug"
+            style={{ lineHeight: 1.18 }}
+          >
+            Mission & Vision
+          </h2>
+          <List items={items} />
+        </ImageSectionContent>
+        <ImageSectionImage
+          src="/home/doctor-with-patient-blurred.png"
+          alt="Doctor consulting with elderly patient"
+        />
+      </ImageSection>
+    </div>
   );
 }

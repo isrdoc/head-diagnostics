@@ -53,8 +53,8 @@ const solutions: SolutionCardProps[] = [
 
 export function SolutionsSection() {
   return (
-    <section className="w-full bg-white py-24">
-      <div className="mx-auto max-w-content px-6">
+    <section className="max-w-page mx-auto w-full bg-white py-24">
+      <div className="max-w-content mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="w-full lg:w-1/4">
             <div className="border-t border-gray-400 pt-4">

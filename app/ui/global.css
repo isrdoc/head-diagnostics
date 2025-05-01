@@ -4,7 +4,12 @@
 
 :root {
   --max-content-width: 90rem;
-  --content-margin: max(0px, calc((100vw - var(--max-content-width)) / 2));
+  --max-page-width: 1800px;
+  --max-page-height: 900px;
+  --content-margin: min(
+    --max-page-width,
+    max(0px, calc((100vw - var(--max-content-width)) / 2))
+  );
   --content-padding: 6rem;
 }
 
@@ -22,16 +27,21 @@
 }
 
 @layer components {
+  .max-h-page {
+    max-height: var(--max-page-height);
+  }
+  .max-w-page {
+    max-width: var(--max-page-width);
+    width: 100%;
+  }
   .max-w-content {
     max-width: var(--max-content-width);
   }
   .ml-viewport-offset {
     margin-left: var(--content-margin);
-    padding-left: calc(var(--content-padding) / 2);
   }
   .mr-viewport-offset {
     margin-right: var(--content-margin);
-    padding-right: calc(var(--content-padding) / 2);
   }
 }
 

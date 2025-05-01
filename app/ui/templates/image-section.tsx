@@ -44,7 +44,7 @@ export function ImageSectionImage({
   className,
 }: ImageSectionImageProps) {
   return (
-    <div className="flex-1 flex justify-end items-center w-full h-full">
+    <div className="flex-1 flex justify-end items-center w-full h-full order-first md:order-none">
       <img
         src={src}
         alt={alt}
@@ -63,13 +63,15 @@ export function ImageSectionContent({
   className,
 }: ImageSectionContentProps) {
   return (
-    <div
-      className={clsx(
-        "border-t border-gray-400 min-w-0 w-full sm:w-[28rem] pt-4 px-6 sm:px-0",
-        className
-      )}
-    >
-      {children}
+    <div className="min-w-0 w-full sm:w-[28rem] px-6 order-last md:order-none">
+      <div
+        className={clsx(
+          "w-full pt-4 md:border-t md:border-gray-400",
+          className
+        )}
+      >
+        {children}
+      </div>
     </div>
   );
 }

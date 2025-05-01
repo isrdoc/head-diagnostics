@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative h-screen bg-[#001A2C]">
+      <div className="relative h-screen max-h-page bg-[#001A2C]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -34,7 +34,7 @@ export function Hero() {
           <div className="h-full w-full min-[1150px]:w-1/2 min-[1150px]:ml-auto">
             <div className="h-full flex flex-col relative ml-auto min-[1150px]:ml-0">
               {/* Main Heading */}
-              <div className="pt-[20vh]">
+              <div className="pt-[30%]">
                 <div className="border-t-2 border-white/30 pt-8">
                   <p className="text-sm uppercase tracking-widest text-white/80 mb-4">
                     Precision brain health diagnostics & monitoring
