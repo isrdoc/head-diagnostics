@@ -5,8 +5,9 @@ import { WhyChooseSection } from "./ui/why-choose-section";
 import { MissionSection } from "./ui/misson-section";
 import { TeamSection } from "./ui/team-section";
 import { PartnersSection } from "./ui/partners-section";
-import { AwardsSection } from "./ui/awards-section";
 import { NewsSection } from "./ui/news-section";
+import { AwardsSection } from "./ui/awards-section";
+import { PublicationsSection } from "./ui/publications-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -24,6 +25,7 @@ export default function Page() {
       <TeamSection />
       <PartnersSection />
       <NewsSection />
+      <PublicationsSection />
       <AwardsSection />
     </main>
   );

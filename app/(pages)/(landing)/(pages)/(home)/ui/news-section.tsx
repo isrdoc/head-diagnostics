@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 interface NewsItem {
   title: string;
@@ -26,7 +26,7 @@ export function NewsSection() {
             href="/news"
             className="inline-flex items-center gap-2 font-bold hover:opacity-80"
           >
-            Show More <ArrowRightIcon className="h-4 w-4" />
+            Show More <ArrowRightIcon className="h-6 w-6" />
           </Link>
         </div>
 
