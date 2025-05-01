@@ -4,6 +4,7 @@ import { SolutionsSection } from "./ui/solutions-section";
 import { WhyChooseSection } from "./ui/why-choose-section";
 import { MissionSection } from "./ui/misson-section";
 import { TeamSection } from "./ui/team-section";
+import { PartnersSection } from "./ui/partners-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -19,6 +20,7 @@ export default function Page() {
       <WhyChooseSection />
       <MissionSection />
       <TeamSection />
+      <PartnersSection />
     </main>
   );
 }

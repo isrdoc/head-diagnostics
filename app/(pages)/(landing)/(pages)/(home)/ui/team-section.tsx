@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 export function TeamSection() {
   return (
-    <section className="py-24">
+    <section className="pt-24">
       <div className="mx-auto max-w-content px-6 mb-12">
         <h2 className="text-sm uppercase tracking-wider mb-4">OUR TEAM</h2>
         <h3 className="text-5xl font-bold">Meet the Team.</h3>
