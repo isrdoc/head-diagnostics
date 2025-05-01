@@ -1,4 +1,5 @@
-import { Button } from "@/app/ui/button";
+import { Button } from "@/app/ui/common/button";
+import { List } from "@/app/ui/common/list";
 
 interface SolutionCardProps {
   title: string;
@@ -103,14 +104,7 @@ function SolutionCard({
         </h3>
         <p className="text-md text-gray-700">{description}</p>
       </div>
-      <ul className="flex-1 space-y-1 pb-4">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-start">
-            <span className="mr-2 text-sm">•</span>
-            <span className="text-gray-600">{feature}</span>
-          </li>
-        ))}
-      </ul>
+      <List items={features} />
       <Button href={href} className="w-full justify-center">
         Learn more
         <svg

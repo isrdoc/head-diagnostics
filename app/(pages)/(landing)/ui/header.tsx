@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import clsx from "clsx";
-import { Button } from "@/app/ui/button";
+import { Button } from "@/app/ui/common/button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

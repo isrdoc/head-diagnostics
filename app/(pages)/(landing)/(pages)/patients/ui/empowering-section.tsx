@@ -1,12 +1,12 @@
 import React from "react";
 
-export function ObjectiveSection() {
+export function EmpoweringSection() {
   return (
     <div className="ml-viewport-offset py-16 pb-28">
       <div className="w-full mb-12" />
-      <div className="w-full flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-14">
+      <div className="w-full flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-36">
         {/* Left: Text Content */}
-        <div className="border-t border-gray-400 min-w-0 w-[28rem] pt-4 mr-viewport-offset">
+        <div className="border-t border-gray-400 min-w-0 w-full sm:w-[28rem] pt-4 px-6 sm:px-0">
           <div className="mb-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">
             Curious about another?
           </div>

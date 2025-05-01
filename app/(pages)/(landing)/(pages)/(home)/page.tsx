@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Hero } from "./ui/hero";
 import { SolutionsSection } from "./ui/solutions-section";
+import { WhyChooseSection } from "./ui/why-choose-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -13,6 +14,7 @@ export default function Page() {
     <main className="flex min-h-screen flex-col">
       <Hero />
       <SolutionsSection />
+      <WhyChooseSection />
     </main>
   );
 }
