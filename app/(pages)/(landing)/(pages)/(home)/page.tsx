@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Hero } from "./ui/hero";
 import { SolutionsSection } from "./ui/solutions-section";
 import { WhyChooseSection } from "./ui/why-choose-section";
+import { MissionSection } from "./ui/misson-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -15,6 +16,7 @@ export default function Page() {
       <Hero />
       <SolutionsSection />
       <WhyChooseSection />
+      <MissionSection />
     </main>
   );
 }
