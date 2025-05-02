@@ -128,7 +128,7 @@ function ContactSectionForm() {
           className="w-5 h-5 rounded border-gray-300"
         />
         <label htmlFor="consent" className="text-gray-700 text-sm font-bold">
-          I'm okay with getting emails and having that activity tracked to
+          I&apos;m okay with getting emails and having that activity tracked to
           improve my experience.
         </label>
       </div>

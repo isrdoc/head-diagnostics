@@ -2,7 +2,7 @@
 
 export function GoogleMapSection() {
   return (
-    <section className="w-full h-[400px] md:h-[500px] bg-gray-100 flex items-center justify-center">
+    <section className="max-w-page-wider mx-auto w-full h-[400px] md:h-[500px] bg-gray-100 flex items-center justify-center">
       <div className="w-full h-full">
         <iframe
           title="Google Map"

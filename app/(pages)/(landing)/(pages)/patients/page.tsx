@@ -1,8 +1,6 @@
 import { Hero } from "./ui/hero";
 import { EmpoweringSection } from "./ui/empowering-section";
-import { GoogleMapSection } from "../../ui/google-map-section";
-import { ContactSection } from "../../ui/contact-section";
-import { Footer } from "../../ui/footer";
+import { WhatExpectSection } from "./ui/what-expect-section";
 
 export default function Page() {
   return (
@@ -10,6 +8,7 @@ export default function Page() {
       <Hero />
       <div className="w-full mb-12" />
       <EmpoweringSection />
+      <WhatExpectSection />
     </main>
   );
 }

@@ -4,11 +4,12 @@
 
 :root {
   --max-content-width: 90rem;
-  --max-page-width: 1800px;
+  --max-page-width: 100rem;
+  --max-page-width-wider: 120rem;
   --max-page-height: 900px;
-  --content-margin: min(
-    --max-page-width,
-    max(0px, calc((100vw - var(--max-content-width)) / 2))
+  --content-margin: max(
+    0px,
+    calc((var(--max-page-width) - var(--max-content-width)) / 2)
   );
   --content-padding: 6rem;
 }
@@ -32,6 +33,10 @@
   }
   .max-w-page {
     max-width: var(--max-page-width);
+    width: 100%;
+  }
+  .max-w-page-wider {
+    max-width: var(--max-page-width-wider);
     width: 100%;
   }
   .max-w-content {
