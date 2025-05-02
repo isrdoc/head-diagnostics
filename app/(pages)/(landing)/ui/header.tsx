@@ -73,7 +73,7 @@ export default function Header() {
                 onClick={handleMenuClick}
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo-dark.svg"
                   alt="Head Diagnostics Logo"
                   width={180}
                   height={40}
