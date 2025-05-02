@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import Image from "next/image";
 
 interface ImageSectionProps {
   children: React.ReactNode;
@@ -45,9 +46,11 @@ export function ImageSectionImage({
 }: ImageSectionImageProps) {
   return (
     <div className="flex-1 flex justify-end items-center w-full h-full order-first md:order-none">
-      <img
+      <Image
         src={src}
         alt={alt}
+        width={600}
+        height={400}
         className={clsx(
           "shadow-lg object-cover w-full max-w-none h-[400px] md:h-[500px] lg:h-[500px] xl:h-[500px]",
           className

@@ -47,7 +47,7 @@ export function WebinarsSection() {
               express myself better, to explain how great and satisfied we are
               with this theme and their support! Fantastic product and service!
             </p>
-            <div className="font-bold mb-1">Killian O'Sullivan</div>
+            <div className="font-bold mb-1">Killian O&apos;Sullivan</div>
             <div className="text-white/80 mb-8">
               UI Designer · Interactive Media
             </div>
