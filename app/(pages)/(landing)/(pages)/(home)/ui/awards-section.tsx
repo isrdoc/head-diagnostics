@@ -9,27 +9,27 @@ const awards = [
   {
     name: "Developer Award",
     label: "5x Developer Award",
-    logo: "/awards/ai-ireland.png",
+    logo: "/awards/ai-ireland-award.png",
   },
   {
     name: "Website of the Day",
     label: "3x Website of the Day",
-    logo: "/awards/ai-ireland.png",
+    logo: "/awards/ai-ireland-award.png",
   },
   {
     name: "Mobile of the Day",
     label: "5x Mobile of the Day",
-    logo: "/awards/ai-ireland.png",
+    logo: "/awards/ai-ireland-award.png",
   },
   {
     name: "Mobile of the Day 2",
     label: "5x Mobile of the Day",
-    logo: "/awards/ai-ireland.png",
+    logo: "/awards/ai-ireland-award.png",
   },
   {
     name: "Developer Award 2",
     label: "5x Developer Award",
-    logo: "/awards/ai-ireland.png",
+    logo: "/awards/ai-ireland-award.png",
   },
 ];
 
