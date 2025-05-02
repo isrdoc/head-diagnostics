@@ -43,9 +43,9 @@ export function WebinarsSection() {
             </div>
             <p className="mb-6 text-lg leading-normal">
               I would put 10 stars to all points. From theme features, design,
-              to Customer support, I only have to say "WOW". Cannot express
-              myself better, to explain how great and satisfied we are with this
-              theme and their support! Fantastic product and service!
+              to Customer support, I only have to say &quot;WOW&quot;. Cannot
+              express myself better, to explain how great and satisfied we are
+              with this theme and their support! Fantastic product and service!
             </p>
             <div className="font-bold mb-1">Killian O'Sullivan</div>
             <div className="text-white/80 mb-8">

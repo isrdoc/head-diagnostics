@@ -9,6 +9,8 @@ import { NewsSection } from "./ui/news-section";
 import { AwardsSection } from "./ui/awards-section";
 import { PublicationsSection } from "./ui/publications-section";
 import { WebinarsSection } from "./ui/webinars-section";
+import { GoogleMapSection } from "./ui/google-map-section";
+import { ContactSection } from "./ui/contact-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -25,10 +27,12 @@ export default function Page() {
       <MissionSection />
       <TeamSection />
       <PartnersSection />
+      <WebinarsSection />
       <NewsSection />
       <PublicationsSection />
-      <WebinarsSection />
       <AwardsSection />
+      <GoogleMapSection />
+      <ContactSection />
     </main>
   );
 }
