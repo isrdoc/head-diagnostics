@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 interface NewsItem {
   title: string;
@@ -47,9 +48,11 @@ export function NewsSection() {
                 } overflow-hidden rounded-lg mb-4`}
               >
                 <div className="absolute inset-0 bg-black/5 group-hover:bg-black/10 transition-colors" />
-                <img
+                <Image
                   src={item.image}
                   alt={item.title}
+                  width={400}
+                  height={500}
                   className="object-cover w-full h-full"
                 />
               </div>
