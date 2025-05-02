@@ -8,6 +8,7 @@ import { PartnersSection } from "./ui/partners-section";
 import { NewsSection } from "./ui/news-section";
 import { AwardsSection } from "./ui/awards-section";
 import { PublicationsSection } from "./ui/publications-section";
+import { WebinarsSection } from "./ui/webinars-section";
 
 export const metadata: Metadata = {
   title: "Head Diagnostics",
@@ -26,6 +27,7 @@ export default function Page() {
       <PartnersSection />
       <NewsSection />
       <PublicationsSection />
+      <WebinarsSection />
       <AwardsSection />
     </main>
   );
