@@ -2,6 +2,7 @@ import { Hero } from "./ui/hero";
 import { EmpoweringSection } from "./ui/empowering-section";
 import { WhatExpectSection } from "./ui/what-expect-section";
 import { WhyMatterSection } from "./ui/why-matter-section";
+import { WhoUseItSection } from "./ui/who-use-it-section";
 
 export default function Page() {
   return (
@@ -11,6 +12,7 @@ export default function Page() {
       <EmpoweringSection />
       <WhatExpectSection />
       <WhyMatterSection />
+      <WhoUseItSection />
     </main>
   );
 }

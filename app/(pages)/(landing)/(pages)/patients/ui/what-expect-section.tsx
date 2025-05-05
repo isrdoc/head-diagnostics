@@ -12,7 +12,7 @@ import {
 
 export function WhatExpectSection() {
   return (
-    <section className="w-full py-24 bg-gray-50">
+    <section className="w-full py-24 bg-gray-100">
       <div className="max-w-content mx-auto px-6">
         <div className="inline-block">
           <hr className="mb-4 border-gray-400" />
