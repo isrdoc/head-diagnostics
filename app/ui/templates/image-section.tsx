@@ -66,13 +66,13 @@ export function ImageSectionContent({
   className,
 }: ImageSectionContentProps) {
   return (
-    <div className="min-w-0 w-full sm:w-[28rem] px-6 order-last md:order-none">
-      <div
-        className={clsx(
-          "w-full pt-4 md:border-t md:border-gray-400",
-          className
-        )}
-      >
+    <div
+      className={clsx(
+        "min-w-0 w-full sm:w-[28rem] px-6 order-last md:order-none",
+        className
+      )}
+    >
+      <div className="w-full pt-4 md:border-t md:border-gray-400">
         {children}
       </div>
     </div>
