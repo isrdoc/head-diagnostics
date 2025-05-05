@@ -37,7 +37,7 @@ export function WhoUseItSection() {
               title="Parkinson's Disease or Multiple Sclerosis"
             />
             <IconCardContent>
-              People diagnosed with or at risk for Parkinson's Disease or
+              People diagnosed with or at risk for Parkinson&apos;s Disease or
               Multiple Sclerosis
             </IconCardContent>
           </IconCard>

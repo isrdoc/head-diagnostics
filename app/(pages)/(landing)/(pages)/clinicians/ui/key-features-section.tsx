@@ -30,7 +30,8 @@ export function KeyFeaturesSection() {
             />
             <IconCardContent>
               Obtain objective data on brain impairment in conditions such as
-              concussion, Parkinson's Disease, stroke, and MS within minutes.
+              concussion, Parkinson&apos;s Disease, stroke, and MS within
+              minutes.
             </IconCardContent>
           </IconCard>
           <IconCard>
